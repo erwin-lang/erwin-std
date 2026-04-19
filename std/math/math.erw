@@ -1,0 +1,12 @@
+pub func fib(iter: UInt32) -> UInt32 {
+    var a = 0;
+    var b = 1;
+
+    for i in 0..iter do {
+        var temp = a;
+        mut a = b;
+        mut b = temp + b;
+    }
+
+    return a;
+}
