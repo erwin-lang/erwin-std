@@ -1,0 +1,39 @@
+pub func fib(iter: UInt32) -> UInt32 do {
+    var a = 0;
+    var b = 1;
+
+    for i in 0..iter do {
+        var temp = a;
+        mut a = b;
+        mut b = temp + b;
+    }
+
+    return a;
+}
+
+pub func clamp(val: Int32, min: Int32, max: Int32) -> Int32 do {
+    if val < min do {
+        return min;
+    }
+
+    if val > max do {
+        return max;
+    }
+
+    return val;
+}
+
+method GenericInt do {
+    pub func fib(self) -> Self do {
+        var a = 0;
+        var b = 1;
+
+        for i in 0..self do {
+            var temp = a;
+            mut a = b;
+            mut b = temp + b;
+        }
+
+        return a;
+    }
+}

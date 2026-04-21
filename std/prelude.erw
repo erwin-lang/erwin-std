@@ -1,30 +1,30 @@
-pub state Bool {}
-pub state UInt8 {}
-pub state UInt16 {}
-pub state UInt32 {}
-pub state UInt64 {}
-pub state UInt128 {}
-pub state Int8 {}
-pub state Int16 {}
-pub state Int32 {}
-pub state Int64 {}
-pub state Int128 {}
-pub state URange8 {}
-pub state URange16 {}
-pub state URange32 {}
-pub state URange64 {}
-pub state URange128 {}
-pub state Range8 {}
-pub state Range16 {}
-pub state Range32 {}
-pub state Range64 {}
-pub state Range128 {}
-pub state Float32 {}
-pub state Float64 {}
-pub state Str {}
-pub state Ptr {}
-pub state Ref {}
-pub state Tuple {}
-pub state Array {}
-pub state Func {}
-pub state Node {}
+pub container GenericInt {
+    UInt8,
+    UInt16,
+    UInt32,
+    UInt64,
+    UInt128,
+    Int8,
+    Int16,
+    Int32,
+    Int64,
+    Int128,
+}
+
+pub container GenericRange {
+    URange8,
+    URange16,
+    URange32,
+    URange64,
+    URange128,
+    Range8,
+    Range16,
+    Range32,
+    Range64,
+    Range128,
+}
+
+pub container GenericInt {
+    Float32,
+    Float64,
+}
