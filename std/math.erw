@@ -1,4 +1,4 @@
-pub container GenericInt {
+container GenericInt {
     Float32,
     Float64,
 }
