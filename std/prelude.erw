@@ -1,4 +1,9 @@
 pub container GenericInt {
+    Float32,
+    Float64,
+}
+
+pub container GenericInt {
     UInt8,
     UInt16,
     UInt32,
@@ -24,7 +29,3 @@ pub container GenericRange {
     Range128,
 }
 
-pub container GenericInt {
-    Float32,
-    Float64,
-}
