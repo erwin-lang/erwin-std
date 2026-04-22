@@ -1,3 +1,8 @@
+pub container GenericInt {
+    Float32,
+    Float64,
+}
+
 pub func fib(iter: UInt32) -> UInt32 do {
     var a = 0;
     var b = 1;
